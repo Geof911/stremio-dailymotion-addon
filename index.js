@@ -63,11 +63,23 @@ app.get("/meta/series/:id.json", (req, res) => {
   res.json({ meta: series });
 });
 
+
 app.get("/stream/series/:id.json", (req, res) => {
-  // No verified direct playback URL yet.
-  // A Dailymotion webpage URL is not a Stremio stream.
-  res.json({ streams: [] });
+  if (req.params.id !== "dailymotion:muhtemel-ask:1:1") {
+    return res.json({ streams: [] });
+  }
+
+  res.json({
+    streams: [
+      {
+        name: "Dailymotion Test",
+        title: "Muhtemel Aşk - Episode 1 (English Sub)",
+        externalUrl: "https://www.dailymotion.com/embed/video/xaspi1i"
+      }
+    ]
+  });
 });
+
 
 app.get("/", (req, res) => {
   res.send("Dailymotion Stremio addon is running");
