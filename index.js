@@ -21,8 +21,7 @@ const episodes = [
   { episode: 13, id: "xbk9yfa" },
   { episode: 14, id: "xb9me4i" },
   { episode: 15, id: "xbfr2ge" },
-  { episode: 16, id: "xbgcfhu" },
-  { episode: 17, id: "xbk9yfa" }
+  { episode: 16, id: "xbgcfhu" }
 ];
 
 const series = {
