@@ -25,6 +25,8 @@ const episodes = [
 ];
 
 const series = {
+  poster: "DIRECT_POSTER_IMAGE_URL",
+  background: "DIRECT_BACKGROUND_IMAGE_URL",
   id: "dailymotion:muhtemel-ask",
   type: "series",
   name: "Muhtemel Aşk",
@@ -33,8 +35,7 @@ const series = {
     id: `dailymotion:muhtemel-ask:1:${item.episode}`,
     title: `Episode ${item.episode}`,
     season: 1,
-    episode: item.episode,
-    released: "2026-01-01T00:00:00.000Z"
+    episode: item.episode
   }))
 };
 
