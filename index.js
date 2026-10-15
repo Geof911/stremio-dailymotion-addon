@@ -74,7 +74,7 @@ app.get("/stream/series/:id.json", (req, res) => {
       {
         name: "Dailymotion Test",
         title: "Muhtemel Aşk - Episode 1 (English Sub)",
-        externalUrl: "https://www.dailymotion.com/embed/video/xaspi1i"
+        externalUrl: "https://www.dailymotion.com/video/xaspi1i"
       }
     ]
   });
